@@ -1,0 +1,17 @@
+
+.btn {
+  @include bg-colors($button-colors);
+}
+
+[class^="btn--"] {
+  &:hover {
+    opacity: .75;
+  }
+  @extend %btn;
+  @include mq(small) {
+    width: 100%;
+  }
+  @include mq(medium) {
+    @include doubly(2.5%);
+  }
+}

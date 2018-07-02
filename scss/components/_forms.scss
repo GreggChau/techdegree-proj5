@@ -1,0 +1,23 @@
+
+.form__label--hidden {
+  display: none;
+}
+
+
+
+.form__input {
+  width: 100%;
+  font-size : 18px;
+  border: none;
+  margin-top: 20px;
+	margin-bottom: 40px;
+	border-bottom: 6px solid $color-primary;
+	color: $color-shadow;
+	font-weight: $font-weight--bold;
+
+
+	&:focus {
+		background-color: $color-shadow;
+    outline: none;
+	}
+}

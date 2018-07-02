@@ -1,0 +1,42 @@
+.container {
+  color: $grey;
+  font-size: $base__font-size;
+  font-family: $font-family--primary;
+  line-height: ($base__line/$base__font-size);
+}
+
+.blockquote {
+  font-weight: $font-weight--light;
+	font-style : italic;
+	font-size : 1.25em;
+  border-left: 0.3em solid $color-primary;
+  border-radius: $br-default;
+  padding-left: 1.25em;
+  margin-left: 1.25em;
+  @include mq(medium) {
+    font-size: 1.5em;
+    margin: 1.3em 1.5em;
+    padding-left: 1.5em;
+  }
+}
+
+
+.headline {
+  &--primary {
+    @extend %hdln-primary;
+    margin-bottom: 36px;
+    margin-top: 0;
+  }
+
+  &--secondary {
+    @extend %tagline;
+  }
+}
+
+
+
+.link {
+  text-align: center;
+  color: $light-blue;
+  font-weight: $font-weight--medium;
+}

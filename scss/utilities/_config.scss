@@ -1,0 +1,75 @@
+
+//font stacks
+
+$font-url--google       : 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i';
+$font-family--primary   : 'Roboto', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+$font-family--secondary : 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+
+//font weight
+
+$font-weight--light     : 300;
+$font-weight--regular   : 400;
+$font-weight--medium    : 500;
+$font-weight--bold      : 700;
+
+//font style
+
+
+//base color
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$light-blue          : #51ddfc;
+$emerald             : #5ece7f;
+$sunglo              : #e67478;
+$coral               : #ff784f;
+$purple-majesty      : #9279c3;
+$lightgreenish-blue  : #55efc4;
+//color usage
+
+$color-primary   : $lightgreenish-blue;
+$color-secondary : $light-blue;
+$color-shadow    : rgba($black, .2);
+
+//button color
+
+$button-colors: (
+	default : $light-blue,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty
+);
+
+//grid system color
+$grid-col--colors: (
+  12 : lighten($lightgreenish-blue, 15%),
+  6  : darken($light-blue, 30%),
+  4  : lighten($light-blue, 10%),
+  3  : lighten($purple-majesty, 15%),
+  5  : lighten($emerald, 15%),
+  7  : lighten($sunglo, 15%),
+  8  : lighten($coral, 15%),
+);
+
+//Text
+$base__font-size   : 16px;
+$base__line        : 24px;
+$letter__spacing   : 1px;
+
+//Border radius
+$br-default: .5em;
+$br-round   : 50%;
+
+//breakpoints
+$brkpnt-sm : 1px;
+$brkpnt-m  : 768px;
+$brkpnt-lg : 1400px;
+
+//grid layout
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;

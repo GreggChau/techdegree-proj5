@@ -1,0 +1,29 @@
+.nav {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include mq(medium) {
+    @include flexbox(flex, nowrap, row);
+    @include justify-content(center);
+  }
+  &__item {
+    @extend %nav-items-horz;
+    a {
+      @extend %nav-items-link;
+      color: $grey;
+      &:hover {
+        @extend %nav-items-on;
+      }
+    }
+  }
+
+  &__item--current {
+    @extend %nav-items-horz;
+    a {
+      @extend %nav-items-link;
+      @extend %nav-items-on;
+    }
+  }
+
+
+}

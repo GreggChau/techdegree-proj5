@@ -1,0 +1,56 @@
+
+
+// grid container
+
+.centered {
+	float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 85%;
+  @extend .centered;
+  padding: 0 20px;
+}
+
+.grid__row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 100%;
+  @include mq(medium) {
+    @include flexbox(flex, wrap, row);
+    @include justify-content(space-between);
+  }
+}
+
+
+//grid columns
+
+.grid__col {
+  @include mq(medium) {
+    @include g-columns;
+  }
+}
+
+.grid__col {
+  @include bg-colors($grid-col--colors);
+}
+
+[class^="grid__col--"] {
+  color: $grey;
+  @extend %flex-values;
+  @extend %btn;
+  @include flexbox(flex, nowrap, column);
+  @include mq(small)  {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  @include mq(medium) {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
